@@ -5,5 +5,6 @@ if ( have_posts() ) :
     endwhile; 
 endif;
 
+the_posts_pagination();
 rewind_posts();
 ?>
