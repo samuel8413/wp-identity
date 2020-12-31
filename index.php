@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <?php wp_head(); ?>
-</head>
-<body>
-    <?php wp_footer(); ?>
-</body>
-</html>
+<?php 
+//Get the code into header.php
+get_header();
+
+/**
+ * Site without header.php it's consider deprecated, it's obligatory to create header.php
+*/
+?>
+
+
+
+
+<?php 
+//Get the code into footer.php
+get_footer();
+
+/**
+ * Site without footer.php it's consider deprecated, it's obligatory to create footer.php
+ */
+?>
