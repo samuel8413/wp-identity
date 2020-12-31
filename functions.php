@@ -66,13 +66,19 @@ add_action( 'after_setup_theme', 'identity_setup' );
 **************************************************************************************************/
 
 function add_identity_scripts() {
-    // Styles
+    /**
+     * Styles
+     */
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     
-    // Scripts
+    /**
+     * Scripts
+     */
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/identity.bundle.js', array(), false, true);
    
-    // Threaded comment reply styles.
+    /**
+     * Threaded comment reply styles.
+     */
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

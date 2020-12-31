@@ -1,5 +1,9 @@
 <?php 
 
+/**
+ * Primary Navbar
+ */
+
 wp_nav_menu(
     array(
       'menu'            => 'ul',
